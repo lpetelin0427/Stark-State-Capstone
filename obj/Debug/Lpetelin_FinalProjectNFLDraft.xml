@@ -1,0 +1,436 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Lpetelin_FinalProjectNFLDraft
+</name>
+</assembly>
+<members>
+<member name="T:Lpetelin_FinalProjectNFLDraft.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Lpetelin_FinalProjectNFLDraft.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Lpetelin_FinalProjectNFLDraft.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DBDataset">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DBDataset.Defensive_BacksDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DBDataset.Defensive_BacksRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DBDataset.Defensive_BacksRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DBDatasetTableAdapters.Defensive_BacksTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DBDatasetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.DBDatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Lpetelin_FinalProjectNFLDraft.DBDataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.DBDatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(Lpetelin_FinalProjectNFLDraft.DBDataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.DBDatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(Lpetelin_FinalProjectNFLDraft.DBDataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.DBDatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.DBDatasetTableAdapters.TableAdapterManager.UpdateAll(Lpetelin_FinalProjectNFLDraft.DBDataset)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DBDatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DBDatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DTDataset">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DTDataset.Defensive_TacklesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DTDataset.Defensive_TacklesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DTDataset.Defensive_TacklesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DTDatasetTableAdapters.Defensive_TacklesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DTDatasetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.DTDatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Lpetelin_FinalProjectNFLDraft.DTDataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.DTDatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(Lpetelin_FinalProjectNFLDraft.DTDataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.DTDatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(Lpetelin_FinalProjectNFLDraft.DTDataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.DTDatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.DTDatasetTableAdapters.TableAdapterManager.UpdateAll(Lpetelin_FinalProjectNFLDraft.DTDataset)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DTDatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.DTDatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.LBDataset">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.LBDataset.LinebackersDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.LBDataset.LinebackersRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.LBDataset.LinebackersRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.LBDatasetTableAdapters.LinebackersTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.LBDatasetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.LBDatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Lpetelin_FinalProjectNFLDraft.LBDataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.LBDatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(Lpetelin_FinalProjectNFLDraft.LBDataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.LBDatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(Lpetelin_FinalProjectNFLDraft.LBDataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.LBDatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.LBDatasetTableAdapters.TableAdapterManager.UpdateAll(Lpetelin_FinalProjectNFLDraft.LBDataset)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.LBDatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.LBDatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.QBDataset">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.QBDataset.QuarterbacksDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.QBDataset.QuarterbacksRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.QBDataset.QuarterbacksRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.QBDatasetTableAdapters.QuarterbacksTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.QBDatasetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.QBDatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Lpetelin_FinalProjectNFLDraft.QBDataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.QBDatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(Lpetelin_FinalProjectNFLDraft.QBDataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.QBDatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(Lpetelin_FinalProjectNFLDraft.QBDataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.QBDatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.QBDatasetTableAdapters.TableAdapterManager.UpdateAll(Lpetelin_FinalProjectNFLDraft.QBDataset)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.QBDatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.QBDatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSet.QuarterbacksDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSet.RunningbacksDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSet.QuarterbacksRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSet.RunningbacksRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSet.QuarterbacksRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSet.RunningbacksRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSetTableAdapters.QuarterbacksTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSetTableAdapters.RunningbacksTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSetTableAdapters.TableAdapterManager.UpdateAll(Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.TopCollegeProspectsDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.WRDataset">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.WRDataset.Wide_ReceiversDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.WRDataset.Wide_ReceiversRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.WRDataset.Wide_ReceiversRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.WRDatasetTableAdapters.Wide_ReceiversTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.WRDatasetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.WRDatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Lpetelin_FinalProjectNFLDraft.WRDataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.WRDatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(Lpetelin_FinalProjectNFLDraft.WRDataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.WRDatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(Lpetelin_FinalProjectNFLDraft.WRDataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.WRDatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Lpetelin_FinalProjectNFLDraft.WRDatasetTableAdapters.TableAdapterManager.UpdateAll(Lpetelin_FinalProjectNFLDraft.WRDataset)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.WRDatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Lpetelin_FinalProjectNFLDraft.WRDatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
