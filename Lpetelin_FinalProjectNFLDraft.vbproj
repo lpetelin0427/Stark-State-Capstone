@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD06CC15-8835-451C-8473-3ECBF9E6FB9B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Lpetelin_FinalProjectNFLDraft.My.MyApplication</StartupObject>
+    <RootNamespace>Lpetelin_FinalProjectNFLDraft</RootNamespace>
+    <AssemblyName>Lpetelin_FinalProjectNFLDraft</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Lpetelin_FinalProjectNFLDraft.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Lpetelin_FinalProjectNFLDraft.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutTheCreator.Designer.vb">
+      <DependentUpon>AboutTheCreator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutTheCreator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBDataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBForm.Designer.vb">
+      <DependentUpon>DBForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTDataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DTDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LBDataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LBDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LBForm.Designer.vb">
+      <DependentUpon>LBForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LBForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="DT.Designer.vb">
+      <DependentUpon>DT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QBDataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QBDataset.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="QuarterBacks.Designer.vb">
+      <DependentUpon>QuarterBacks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuarterBacks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RBForm.Designer.vb">
+      <DependentUpon>RBForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RBForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopCollegeProspectsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TopCollegeProspectsDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="WorksCited.Designer.vb">
+      <DependentUpon>WorksCited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorksCited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WRDataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WRDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WRForm.Designer.vb">
+      <DependentUpon>WRForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WRForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutTheCreator.resx">
+      <DependentUpon>AboutTheCreator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBForm.resx">
+      <DependentUpon>DBForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LBForm.resx">
+      <DependentUpon>LBForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DT.resx">
+      <DependentUpon>DT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuarterBacks.resx">
+      <DependentUpon>QuarterBacks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RBForm.resx">
+      <DependentUpon>RBForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorksCited.resx">
+      <DependentUpon>WorksCited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WRForm.resx">
+      <DependentUpon>WRForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBDataset.xsc">
+      <DependentUpon>DBDataset.xsd</DependentUpon>
+    </None>
+    <None Include="DBDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDataset.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBDataset.xss">
+      <DependentUpon>DBDataset.xsd</DependentUpon>
+    </None>
+    <None Include="DTDataset.xsc">
+      <DependentUpon>DTDataset.xsd</DependentUpon>
+    </None>
+    <None Include="DTDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DTDataset.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTDataset.xss">
+      <DependentUpon>DTDataset.xsd</DependentUpon>
+    </None>
+    <None Include="LBDataset.xsc">
+      <DependentUpon>LBDataset.xsd</DependentUpon>
+    </None>
+    <None Include="LBDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LBDataset.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LBDataset.xss">
+      <DependentUpon>LBDataset.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="QBDataset.xsc">
+      <DependentUpon>QBDataset.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="QBDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QBDataset.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="QBDataset.xss">
+      <DependentUpon>QBDataset.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TopCollegeProspectsDataSet.xsc">
+      <DependentUpon>TopCollegeProspectsDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TopCollegeProspectsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TopCollegeProspectsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TopCollegeProspectsDataSet.xss">
+      <DependentUpon>TopCollegeProspectsDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="WRDataset.xsc">
+      <DependentUpon>WRDataset.xsd</DependentUpon>
+    </None>
+    <None Include="WRDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WRDataset.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WRDataset.xss">
+      <DependentUpon>WRDataset.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TopCollegeProspects.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
